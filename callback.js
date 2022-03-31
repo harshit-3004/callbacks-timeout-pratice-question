@@ -21,6 +21,7 @@ function getItems(){
 
 function addItem(newItem,callback){
     items.push(newItem);
+    getItems();
 }
 
-addItem({stuName : "Chirag", rollNo : 13 , course : "CAM"},getItems());
+addItem({stuName : "Chirag", rollNo : 13 , course : "CAM"},getItems);
